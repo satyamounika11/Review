@@ -300,6 +300,7 @@ img{
         left: 50%;
         top: 95%;
         transform: translate(-50%, -100%);
+        transition: 1s 0.8s ease-in-out;
     }
 
     .panels-container{
@@ -316,6 +317,7 @@ img{
 
     .panel .content{
         padding-right: 15%;
+        transition: 0.9s 0.8s ease-in-out;
     }
 
     .panel h3{
@@ -335,6 +337,7 @@ img{
 
     .image{
         width: 200px;
+        transition: 0.9s 0.6s ease-in-out;
     }
 
     /* creating 3 rows and assigning left panel in first row right panel into third row  */
@@ -348,6 +351,23 @@ img{
 
     .right-panel .content, .right-panel .image{
         transform: translateY(300px);
+    }
+
+    .container.sign-up-mode:before{
+        transform: translate(-50%, 100%);
+        bottom: 32%;
+        right: initial;
+    }
+
+    .container.sign-up-mode .left-panel .image,
+    .container.sign-up-mode .left-panel .content{
+        transform: translateY(-300px);
+    }
+
+    .container.sign-up-mode .signup-signin{
+        top: 5%;
+        transform: translate(-50%, 0);
+        left: 50%;
     }
 }
 
