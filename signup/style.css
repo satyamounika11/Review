@@ -54,6 +54,7 @@ body, input{
     display: grid;
     grid-template-columns: 1fr;
     z-index: 5;
+    transition: 1s 0.7s ease-in-out;
 }
 
 
@@ -255,6 +256,23 @@ img{
     pointer-events: all;
 }
 
+.container.sign-up-mode .signup-signin{
+    left: 25%;
+}
+
+/* This is used to bring Sign up image and Sign in form */
+
+.container.sign-up-mode form.sign-in-form{
+    z-index: 1;
+    opacity: 0;
+}
+
+/* This is used to bring Sign up form and Sign in image */
+
+.container.sign-up-mode form.sign-up-form{
+    z-index: 2;
+    opacity: 1;
+}
 
 
 
