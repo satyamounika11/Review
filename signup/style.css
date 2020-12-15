@@ -277,6 +277,8 @@ img{
     opacity: 1;
 }
 
+/* media query for getting responsiveness in all devices */
+
 @media (max-width: 870px){
     .container{
         min-height: 800px;
